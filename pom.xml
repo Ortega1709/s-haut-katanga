@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ortega</groupId>
-    <artifactId>s-haut-katanga</artifactId>
+    <artifactId>s-lubumbashi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>s-haut-katanga</name>
     <description>s-haut-katanga</description>
