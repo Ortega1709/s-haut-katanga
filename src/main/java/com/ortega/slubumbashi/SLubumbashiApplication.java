@@ -1,13 +1,13 @@
-package com.ortega.shautkatanga;
+package com.ortega.slubumbashi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SHautKatangaApplication {
+public class SLubumbashiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SHautKatangaApplication.class, args);
+        SpringApplication.run(SLubumbashiApplication.class, args);
     }
 
 }

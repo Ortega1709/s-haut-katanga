@@ -1,10 +1,10 @@
-package com.ortega.shautkatanga;
+package com.ortega.slubumbashi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SHautKatangaApplicationTests {
+class SLubumbashiApplicationTests {
 
     @Test
     void contextLoads() {

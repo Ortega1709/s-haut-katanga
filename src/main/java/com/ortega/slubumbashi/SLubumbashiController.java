@@ -1,4 +1,4 @@
-package com.ortega.shautkatanga;
+package com.ortega.slubumbashi;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/v1")
-public class SHautKatangaController {
+public class SLubumbashiController {
 
     @GetMapping("/info")
     public String index() {
