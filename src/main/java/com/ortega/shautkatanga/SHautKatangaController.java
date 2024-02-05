@@ -1,4 +1,4 @@
-package com.ortega.shautkatanga.controllers;
+package com.ortega.shautkatanga;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
