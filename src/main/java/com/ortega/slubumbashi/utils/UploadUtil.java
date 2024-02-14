@@ -22,4 +22,12 @@ public class UploadUtil {
 
     }
 
+    public static String generateAlreadyUsedSongName(String fileName, String uuid) {
+        String[] parts = fileName.split("\\.");
+        // get extension of current file
+        String extension = parts[parts.length - 1];
+
+        return uuid + "." + extension;
+    }
+
 }

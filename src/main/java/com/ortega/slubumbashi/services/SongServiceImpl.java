@@ -26,12 +26,12 @@ public class SongServiceImpl implements SongService {
     @Autowired
     @Qualifier("webApplicationContext")
     private ResourceLoader resourceLoader;
-    
+
     private SongRepository songRepository;
 
     @Override
     public Song saveSong(Song song, MultipartFile file) {
-        String songLink = uploadSong(file);
+        String songLink = uploadSong(song, file);
 
         // set song link
         song.setLink(songLink);
@@ -70,13 +70,14 @@ public class SongServiceImpl implements SongService {
         }
     }
 
-    private String uploadSong(MultipartFile song) {
+    private String uploadSong(Song song, MultipartFile file) {
         log.info("Upload new song");
 
-        String songUniqueName = UploadUtil.generateUniqueSongName(Objects.requireNonNull(song.getOriginalFilename()));
+        String songUniqueName = UploadUtil
+                .generateAlreadyUsedSongName(Objects.requireNonNull(file.getOriginalFilename()), song.getLink());
 
         try {
-            song.transferTo(new File(UploadUtil.getResourcePath() + songUniqueName));
+            file.transferTo(new File(UploadUtil.getResourcePath() + songUniqueName));
             return songUniqueName;
         } catch (Exception e) {
             log.error(e.getMessage());

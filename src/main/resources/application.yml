@@ -3,3 +3,20 @@ server:
 spring:
   application:
     name: s-lubumbashi
+
+  data:
+    mongodb:
+      host: localhost
+      username: root
+      password: root
+      database: s-lubumbashi
+      authentication-database: admin
+      port: 27017
+
+
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 20MB
+      max-file-size: 20MB
+      max-request-size: 20MB
